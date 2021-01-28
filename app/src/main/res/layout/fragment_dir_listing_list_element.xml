@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="fill_parent"
+        android:padding="4dp"
+        android:id="@+id/wDirListElement_DirOrFile"
+        android:contentDescription="@string/dir_listing_file_or_directory_icon"
+        android:background="?android:selectableItemBackground"
+        android:src="@android:drawable/sym_contact_card"
+        app:tint="@android:color/holo_blue_light" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="fill_parent"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/dir_listing_onclick_action"
+        android:id="@+id/wDirListElement_Name" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="fill_parent"
+        android:padding="4dp"
+        android:id="@+id/wDirListElement_AlreadySeen"
+        android:contentDescription="@string/dir_listing_already_seen_icon"
+        android:background="?android:selectableItemBackground"
+        android:src="@android:drawable/ic_menu_view"
+        android:visibility="invisible"
+        app:tint="@android:color/holo_blue_light" />
+
+    <ImageButton
+        android:id="@+id/wDirListElement_Action"
+        android:layout_width="40dp"
+        android:layout_height="fill_parent"
+        android:contentDescription="@string/dir_listing_action_description"
+        android:background="?android:selectableItemBackground"
+        android:tint="@android:color/holo_blue_light"
+        android:src="@android:drawable/ic_menu_add" />
+
+</LinearLayout>

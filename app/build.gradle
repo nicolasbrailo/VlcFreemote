@@ -1,0 +1,25 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 30
+
+    defaultConfig {
+        applicationId "com.nicolasbrailo.vlcfreemote"
+        minSdkVersion 15
+        targetSdkVersion 30
+        versionCode 13
+        versionName "1.13"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.fragment:fragment:1.2.5'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+}

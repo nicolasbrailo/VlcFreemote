@@ -1,0 +1,9 @@
+<resources>
+
+    <style name="LightTheme" parent="Theme.AppCompat.Light.DarkActionBar" />
+    <style name="DarkTheme" parent="Theme.AppCompat" />
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="LightTheme" />
+
+</resources>

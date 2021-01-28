@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/wServerSelect_CurrentServer"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/server_select_manual_selection_label" />
+
+    <LinearLayout
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="40"
+            android:hint="@string/server_select_manual_selection_default_ip_hint"
+            android:text="@string/server_select_manual_selection_default_ip"
+            android:id="@+id/wServerSelect_CustomServerIp"
+            android:autofillHints="192.168.1."
+            android:inputType="text" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:hint="@string/server_select_manual_selection_default_port_hint"
+            android:text="@string/server_select_manual_selection_default_port"
+            android:id="@+id/wServerSelect_CustomServerPort"
+            android:autofillHints="8080"
+            android:inputType="number" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="40"
+            android:text="@string/server_select_manual_selection_set"
+            android:id="@+id/wServerSelect_CustomServerSet"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/server_select_lru_selection_label" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:id="@+id/wServerSelect_LRUServersList"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/server_select_auto_selection_label" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/server_select_toggle_scanning_start"
+        android:id="@+id/wServerSelect_ToggleServerScanning"
+        android:layout_gravity="end" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:id="@+id/wServerSelect_ScannedServersList"
+        android:layout_gravity="center_horizontal" />
+
+    <ProgressBar
+        android:id="@+id/wServerSelect_ScanningServersIndicator"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

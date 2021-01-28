@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="@string/wDirListing_JumpToBookmark_label"
+        android:id="@+id/wDirListing_JumpToBookmark" />
+
+    <item
+        android:title="@string/wDirListing_Bookmark_label"
+        android:id="@+id/wDirListing_Bookmark" />
+
+    <item
+        android:title="@string/wDirListing_ManageBookmark_label"
+        android:id="@+id/wDirListing_ManageBookmark" />
+
+    <item
+        android:title="@string/wDirListing_AddRandom_label"
+        android:id="@+id/wDirListing_PlayRandom" />
+
+</menu>

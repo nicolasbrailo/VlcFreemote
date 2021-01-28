@@ -1,0 +1,28 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <ImageButton
+        android:id="@+id/wPlaylist_PopupMenu"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:contentDescription="@string/dir_listing_action_description"
+        android:background="?android:selectableItemBackground"
+        android:tint="@android:color/holo_blue_light"
+        android:src="@android:drawable/ic_menu_more" />
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingTop="10dp"
+        android:id="@+id/wPlaylist_List"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1" />
+
+</LinearLayout>
