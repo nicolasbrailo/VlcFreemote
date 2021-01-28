@@ -7,8 +7,8 @@ android {
         applicationId "com.nicolasbrailo.vlcfreemote"
         minSdkVersion 15
         targetSdkVersion 30
-        versionCode 13
-        versionName "1.13"
+        versionCode 15
+        versionName "1.15"
     }
     buildTypes {
         release {
