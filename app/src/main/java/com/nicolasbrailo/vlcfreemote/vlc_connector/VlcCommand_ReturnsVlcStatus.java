@@ -7,6 +7,8 @@ import com.nicolasbrailo.vlcfreemote.vlc_connector.http_utils.XmlObjectReader;
 
 import java.util.List;
 
+import android.util.Log;
+
 public abstract class VlcCommand_ReturnsVlcStatus implements VlcCommand {
 
     private final VlcStatus.Observer cb;
@@ -47,7 +49,7 @@ public abstract class VlcCommand_ReturnsVlcStatus implements VlcCommand {
                         } catch (final Exception ex) {
                             final String msg = "Can't parse VLC status: (Key,Value) " +
                                                     key + "," + val + " - Ex: " + ex.getMessage();
-                            cb.onVlcStatusFetchError(msg);
+                            Log.i(getClass().getSimpleName(), msg);
                         }
                     }
 
